@@ -17,6 +17,7 @@
 		EC77DF852A0BDD56001ACFE0 /* PodcastImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC77DF842A0BDD56001ACFE0 /* PodcastImages.xcassets */; };
 		EC77DF8C2A0BE45E001ACFE0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC77DF8B2A0BE45E001ACFE0 /* Colors.xcassets */; };
 		EC77DF8E2A0BE5C2001ACFE0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC77DF8D2A0BE5C2001ACFE0 /* Colors.swift */; };
+		EC77DF902A116962001ACFE0 /* topBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC77DF8F2A116962001ACFE0 /* topBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		EC77DF842A0BDD56001ACFE0 /* PodcastImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PodcastImages.xcassets; sourceTree = "<group>"; };
 		EC77DF8B2A0BE45E001ACFE0 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		EC77DF8D2A0BE5C2001ACFE0 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		EC77DF8F2A116962001ACFE0 /* topBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				EC77DF5B2A0BD9A6001ACFE0 /* ContentView.swift */,
+				EC77DF8F2A116962001ACFE0 /* topBar.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				EC77DF5C2A0BD9A6001ACFE0 /* ContentView.swift in Sources */,
 				EC77DF8E2A0BE5C2001ACFE0 /* Colors.swift in Sources */,
 				EC77DF5A2A0BD9A6001ACFE0 /* IOS_PodcastApp.swift in Sources */,
+				EC77DF902A116962001ACFE0 /* topBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
