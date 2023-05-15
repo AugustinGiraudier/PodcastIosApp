@@ -17,7 +17,7 @@ struct PodcastView: View {
             ZStack{
                 VStack{
                     backGroundColor.edgesIgnoringSafeArea(.top)
-                        .frame(height: 300)
+                        .frame(height: UIScreen.main.bounds.size.height/2)
                     Color.white
                 }
                 VStack{
@@ -26,7 +26,6 @@ struct PodcastView: View {
                             PodcastHeader(imageName: "podcast3", parent: self)
                             PodcastEpisodes()
                         }
-                        
                     }
                     NavBar()
                         .frame(height: 0)

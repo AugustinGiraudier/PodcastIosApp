@@ -12,6 +12,9 @@
 		EC73BAFC2A12110700BF6255 /* ListSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73BAFB2A12110700BF6255 /* ListSeparator.swift */; };
 		EC73BAFE2A12126700BF6255 /* EpisodeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73BAFD2A12126700BF6255 /* EpisodeRow.swift */; };
 		EC73BB012A12138500BF6255 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73BB002A12138500BF6255 /* Episode.swift */; };
+		EC73BB062A1236AA00BF6255 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73BB052A1236AA00BF6255 /* Podcast.swift */; };
+		EC73BB092A12382200BF6255 /* BibliothequeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73BB082A12382200BF6255 /* BibliothequeView.swift */; };
+		EC73BB0D2A12BC4600BF6255 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73BB0C2A12BC4600BF6255 /* TopBar.swift */; };
 		EC77DF5A2A0BD9A6001ACFE0 /* IOS_PodcastApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC77DF592A0BD9A6001ACFE0 /* IOS_PodcastApp.swift */; };
 		EC77DF5E2A0BD9A7001ACFE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC77DF5D2A0BD9A7001ACFE0 /* Assets.xcassets */; };
 		EC77DF612A0BD9A7001ACFE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC77DF602A0BD9A7001ACFE0 /* Preview Assets.xcassets */; };
@@ -50,6 +53,9 @@
 		EC73BAFB2A12110700BF6255 /* ListSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSeparator.swift; sourceTree = "<group>"; };
 		EC73BAFD2A12126700BF6255 /* EpisodeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeRow.swift; sourceTree = "<group>"; };
 		EC73BB002A12138500BF6255 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		EC73BB052A1236AA00BF6255 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
+		EC73BB082A12382200BF6255 /* BibliothequeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliothequeView.swift; sourceTree = "<group>"; };
+		EC73BB0C2A12BC4600BF6255 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
 		EC77DF562A0BD9A6001ACFE0 /* IOS-Podcast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-Podcast.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC77DF592A0BD9A6001ACFE0 /* IOS_PodcastApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_PodcastApp.swift; sourceTree = "<group>"; };
 		EC77DF5D2A0BD9A7001ACFE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,8 +103,17 @@
 			isa = PBXGroup;
 			children = (
 				EC73BB002A12138500BF6255 /* Episode.swift */,
+				EC73BB052A1236AA00BF6255 /* Podcast.swift */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		EC73BB072A12380C00BF6255 /* Bibliotheque */ = {
+			isa = PBXGroup;
+			children = (
+				EC73BB082A12382200BF6255 /* BibliothequeView.swift */,
+			);
+			path = Bibliotheque;
 			sourceTree = "<group>";
 		};
 		EC77DF4D2A0BD9A6001ACFE0 = {
@@ -161,8 +176,10 @@
 		EC77DF832A0BDB3F001ACFE0 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				EC73BB0C2A12BC4600BF6255 /* TopBar.swift */,
 				EC73BAFB2A12110700BF6255 /* ListSeparator.swift */,
 				EC77DF962A11730D001ACFE0 /* NavBar.swift */,
+				EC73BB072A12380C00BF6255 /* Bibliotheque */,
 				EC77DF912A116F5A001ACFE0 /* podcast */,
 			);
 			path = views;
@@ -326,9 +343,12 @@
 			files = (
 				EC73BAFE2A12126700BF6255 /* EpisodeRow.swift in Sources */,
 				EC77DF932A116FEF001ACFE0 /* PodcastView.swift in Sources */,
+				EC73BB062A1236AA00BF6255 /* Podcast.swift in Sources */,
 				EC77DF952A1170A1001ACFE0 /* PodcastHeader.swift in Sources */,
 				EC73BAFA2A120E7300BF6255 /* PodcastEpisodes.swift in Sources */,
+				EC73BB092A12382200BF6255 /* BibliothequeView.swift in Sources */,
 				EC73BAFC2A12110700BF6255 /* ListSeparator.swift in Sources */,
+				EC73BB0D2A12BC4600BF6255 /* TopBar.swift in Sources */,
 				EC73BB012A12138500BF6255 /* Episode.swift in Sources */,
 				EC77DF8E2A0BE5C2001ACFE0 /* Colors.swift in Sources */,
 				EC77DF5A2A0BD9A6001ACFE0 /* IOS_PodcastApp.swift in Sources */,
