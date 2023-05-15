@@ -9,20 +9,21 @@ import SwiftUI
 
 struct PodcastHeader: View {
     
-    public init(imageName:String){
+    public init(imageName:String, parent: PodcastView){
         image = UIImage(named:imageName)
+        self.parent = parent
     }
     
     @State private var backGroundColor: Color = .gray // Ajout d'un State pour stocker la couleur moyenne
     private let image : UIImage?
+    private let parent : PodcastView
     
     var body: some View {
         
         ZStack(alignment:.top){
             
             backGroundColor // Utilisation de la couleur moyenne comme fond de la vue
-                .ignoresSafeArea()
-                .frame(height: 500)
+                .frame(height: 520)
             
             VStack {
                 
@@ -66,13 +67,18 @@ struct PodcastHeader: View {
                     .bold()
                     .padding(.top, 20)
                 
+                PodcastMark(mainColor:.white)
+                    .padding(.top, 1)
+                
                 Spacer()
             }
                 .onAppear {
                     if let image = image {
                         backGroundColor = averageColor(from: image)
+                        parent.backGroundColor = backGroundColor
                     }
                 }
+                .background(backGroundColor.edgesIgnoringSafeArea(.top))
             
         }
     }
@@ -126,6 +132,6 @@ struct PodcastHeader: View {
 
 struct PodcastHeader_Previews: PreviewProvider {
     static var previews: some View {
-        PodcastHeader(imageName: "podcast1")
+        PodcastHeader(imageName: "podcast1", parent :PodcastView())
     }
 }

@@ -9,12 +9,28 @@ import SwiftUI
 
 struct PodcastView: View {
         
+    @State public var backGroundColor: Color = .white
+    
     var body: some View {
         
         NavigationStack {
-            VStack{
-                PodcastHeader(imageName: "podcast3")
-                NavBar()
+            ZStack{
+                VStack{
+                    backGroundColor.edgesIgnoringSafeArea(.top)
+                        .frame(height: 300)
+                    Color.white
+                }
+                VStack{
+                    ScrollView(.vertical){
+                        VStack{
+                            PodcastHeader(imageName: "podcast3", parent: self)
+                            PodcastEpisodes()
+                        }
+                        
+                    }
+                    NavBar()
+                        .frame(height: 0)
+                }
             }
         }
     }

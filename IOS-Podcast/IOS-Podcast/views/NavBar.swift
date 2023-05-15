@@ -13,12 +13,9 @@ struct NavBar: View {
     var body: some View {
         
         ZStack{
-            Colors.primary.edgesIgnoringSafeArea(.all)
+            Colors.primary
             VStack {
-                // Contenu de la vue principale
-                
                 Spacer()
-                
                 // Barre de navigation
                 Divider()
                 HStack {
@@ -63,11 +60,11 @@ struct NavBar: View {
                     }
                         .navigationBarBackButtonHidden(true)
                 }
-                .padding(.horizontal)
+                .padding(.horizontal,25)
                 .padding(.bottom, 8)
                 .foregroundColor(.gray)
             }
-        }
+        }.ignoresSafeArea()
            
     }
 }
