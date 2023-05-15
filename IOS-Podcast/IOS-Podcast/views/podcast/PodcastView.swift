@@ -17,11 +17,7 @@ struct PodcastView: View {
                 NavBar()
             }
         }
-        
     }
-    
-    
-    
 }
 
 struct PodcastView_Previews: PreviewProvider {

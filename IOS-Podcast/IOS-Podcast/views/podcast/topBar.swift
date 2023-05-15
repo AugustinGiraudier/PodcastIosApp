@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct topBar: View {
+    
+    @Environment(\.dismiss) private var dismiss
+    
     var body: some View {
         
         ZStack {
@@ -15,7 +18,7 @@ struct topBar: View {
             VStack{
                 HStack {
                     Button(action: {
-                        // Action à effectuer lors du clic sur le premier bouton
+                        dismiss()
                     }) {
                         Image(systemName: "chevron.left") // Icône système
                             .foregroundColor(.white) // Couleur de l'icône

@@ -30,6 +30,7 @@ struct NavBar: View {
                                 .font(.caption)
                         }
                     }
+                        .navigationBarBackButtonHidden(true)
                     Spacer()
                     NavigationLink(destination: PodcastView()) {
                         VStack {
@@ -39,6 +40,7 @@ struct NavBar: View {
                                 .font(.caption)
                         }
                     }
+                        .navigationBarBackButtonHidden(true)
                     Spacer()
                     NavigationLink(destination: PodcastView()) {
                         VStack {
@@ -48,6 +50,7 @@ struct NavBar: View {
                                 .font(.caption)
                         }
                     }
+                        .navigationBarBackButtonHidden(true)
                         .foregroundColor(Colors.secondary)
                     Spacer()
                     NavigationLink(destination: PodcastView()) {
@@ -58,6 +61,7 @@ struct NavBar: View {
                                 .font(.caption)
                         }
                     }
+                        .navigationBarBackButtonHidden(true)
                 }
                 .padding(.horizontal)
                 .padding(.bottom, 8)
