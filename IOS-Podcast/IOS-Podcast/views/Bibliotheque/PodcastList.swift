@@ -23,6 +23,7 @@ struct PodcastList: View {
                 }
         }
         .padding(.top,16)
+        .padding(.bottom,60)
     }
 }
 

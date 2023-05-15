@@ -46,6 +46,7 @@ struct PodcastEpisodes: View {
                 
             }
         }
+        .padding(.bottom,40)
         
         
         

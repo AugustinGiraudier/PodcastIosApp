@@ -22,9 +22,10 @@ struct BibliothequeView: View {
                 Colors.primary
                 
                 VStack{
-                    ScrollView(.vertical){
+                    ScrollView(){
                         PodcastList(podcasts: podcasts)
                     }
+                    
                     NavBar()
                         .frame(height: 0)
                 }
