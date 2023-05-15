@@ -61,7 +61,7 @@ struct NavBar: View {
                         .navigationBarBackButtonHidden(true)
                 }
                 .padding(.horizontal,25)
-                .padding(.bottom, 8)
+                .padding(.bottom, 60)
                 .foregroundColor(.gray)
             }
         }.ignoresSafeArea()
