@@ -19,7 +19,7 @@ struct NavBar: View {
                 // Barre de navigation
                 Divider()
                 HStack {
-                    NavigationLink(destination: BibliothequeView()) {
+                    NavigationLink(destination: BibliothequeView(podcasts:Stub.getAllPodcasts())) {
                         VStack {
                             Image(systemName: "play.circle.fill")
                                 .imageScale(.large)
@@ -29,7 +29,7 @@ struct NavBar: View {
                     }
                         .navigationBarBackButtonHidden(true)
                     Spacer()
-                    NavigationLink(destination: BibliothequeView()) {
+                    NavigationLink(destination: BibliothequeView(podcasts:Stub.getAllPodcasts())) {
                         VStack {
                             Image(systemName: "safari.fill")
                                 .imageScale(.large)
@@ -39,7 +39,7 @@ struct NavBar: View {
                     }
                         .navigationBarBackButtonHidden(true)
                     Spacer()
-                    NavigationLink(destination: BibliothequeView()) {
+                    NavigationLink(destination: BibliothequeView(podcasts:Stub.getAllPodcasts())) {
                         VStack {
                             Image(systemName: "book.fill")
                                 .imageScale(.large)
@@ -50,7 +50,7 @@ struct NavBar: View {
                         .navigationBarBackButtonHidden(true)
                         .foregroundColor(Colors.secondary)
                     Spacer()
-                    NavigationLink(destination: BibliothequeView()) {
+                    NavigationLink(destination: BibliothequeView(podcasts:Stub.getAllPodcasts())) {
                         VStack {
                             Image(systemName: "magnifyingglass")
                                 .imageScale(.large)

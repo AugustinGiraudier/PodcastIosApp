@@ -11,9 +11,11 @@ struct PodcastEpisodes: View {
     
     
     
-    private let episodes = [
-        Episode(day:"MARDI", summary:"| testekjfhzlefhze zelkfhzkehf zlekfhzehfzieh zliehfziehf zlefzkehfkzf", duration: "00:06:10", title: "Le journal de la science")
-    ]
+    private let episodes : [Episode]
+    
+    init(episodes:[Episode]){
+        self.episodes = episodes
+    }
 
     
     var body: some View {
@@ -36,12 +38,12 @@ struct PodcastEpisodes: View {
                 .padding(.top, 20)
                 
                 ListSeparator()
-                EpisodeRow(episode:episodes[0])
-                ListSeparator()
-                EpisodeRow(episode:episodes[0])
-                ListSeparator()
                 
-                .scrollDisabled(true)
+                ForEach(episodes) { episode in
+                    EpisodeRow(episode:episode)
+                    ListSeparator()
+                }
+                
             }
         }
         
@@ -52,6 +54,6 @@ struct PodcastEpisodes: View {
 
 struct PodcastEpisodes_Previews: PreviewProvider {
     static var previews: some View {
-        PodcastEpisodes()
+        PodcastEpisodes(episodes: Stub.getManyEpisodes())
     }
 }

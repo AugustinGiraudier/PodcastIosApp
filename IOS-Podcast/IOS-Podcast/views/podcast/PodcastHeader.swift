@@ -46,7 +46,7 @@ struct PodcastHeader: View {
                     .font(.system(size: 20))
                     .foregroundColor(.white)
                 
-                Text("Fabien Olicard")
+                Text(podcast.author)
                     .foregroundColor(.white)
                 
                 Button(action: {
@@ -73,6 +73,8 @@ struct PodcastHeader: View {
                         .padding(.top, 20)
                         .padding(.horizontal)
                         .multilineTextAlignment(.leading)
+                        .lineLimit(5)
+                        .truncationMode(.tail)
                     Spacer()
                 }
                     
@@ -142,8 +144,6 @@ struct PodcastHeader: View {
 
 struct PodcastHeader_Previews: PreviewProvider {
     static var previews: some View {
-        PodcastHeader(podcast: Podcast(imageName: "podcast2", title: "le titre", mark: "4.5 (45)", category: "Humour · Tous les jours", author: "Fabien Olicard", episodes: [
-            Episode(day:"MARDI", summary:"| teste kjfhz lefhze zelkfh zkehf zlek fhzehf zieh zliehf ziehf zlefz kehf kzf", duration: "00:06:10", title: "Le journal de la science")
-    ]))
+        PodcastHeader(podcast: Stub.getOnePodcast())
     }
 }

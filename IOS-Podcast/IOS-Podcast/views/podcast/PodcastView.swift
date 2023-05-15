@@ -30,7 +30,7 @@ struct PodcastView: View {
                     ScrollView(.vertical){
                         VStack{
                             PodcastHeader(podcast: podcast, parent: self)
-                            PodcastEpisodes()
+                            PodcastEpisodes(episodes: podcast.episodes)
                         }
                     }
                     NavBar()
@@ -43,8 +43,6 @@ struct PodcastView: View {
 
 struct PodcastView_Previews: PreviewProvider {
     static var previews: some View {
-        PodcastView(podcast: Podcast(imageName: "podcast2", title: "le titre", mark: "4.5 (45)", category: "Humour · Tous les jours", author: "Fabien Olicard", episodes: [
-            Episode(day:"MARDI", summary:"| testekjfhzlefhze zelkfhzkehf zlekfhzehfzieh zliehfziehf zlefzkehfkzf", duration: "00:06:10", title: "Le journal de la science")
-    ]))
+        PodcastView(podcast: Stub.getOnePodcast())
     }
 }

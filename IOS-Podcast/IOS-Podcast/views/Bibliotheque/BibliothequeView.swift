@@ -9,18 +9,11 @@ import SwiftUI
 
 struct BibliothequeView: View {
     
-    let podcasts = [
-        Podcast(imageName: "podcast1", title: "le titre", mark: "4.5 (45)", category: "Humour · Tous les jours",author: "Fabien Olicard", episodes: [
-                Episode(day:"MARDI", summary:"| testekjfhzlefhze zelkfhzkehf zlekfhzehfzieh zliehfziehf zlefzkehfkzf", duration: "00:06:10", title: "Le journal de la science")
-        ]),
-        Podcast(imageName: "podcast2", title: "le titre", mark: "4.5 (45)", category: "Humour · Tous les jours", author: "Fabien Olicard", episodes: [
-                Episode(day:"MARDI", summary:"| test ekj fhzle fhze zelkfh zkehf zlekfhzehf zieh zlie hfzie hf zlefzk ehfkzf", duration: "00:06:10", title: "Le journal de la science")
-        ]),
-        Podcast(imageName: "podcast3", title: "le titre", mark: "4.5 (45)", category: "Humour · Tous les jours", author: "Fabien Olicard", episodes: [
-                Episode(day:"MARDI", summary:"| testekjfhzlefhze zelkfhzkehf zlekfhzehfzieh zliehfziehf zlefzkehfkzf", duration: "00:06:10", title: "Le journal de la science")
-        ])
-    ]
+    private let podcasts:[Podcast]
     
+    init(podcasts:[Podcast]){
+        self.podcasts=podcasts
+    }
     
     var body: some View {
         NavigationStack {
@@ -38,15 +31,12 @@ struct BibliothequeView: View {
                 .navigationTitle("Podcasts")
                 .toolbar {TopBar()}
             }
-            
         }
-        
     }
-    
 }
 
 struct BibliothequeView_Previews: PreviewProvider {
     static var previews: some View {
-        BibliothequeView()
+        BibliothequeView(podcasts:Stub.getAllPodcasts())
     }
 }

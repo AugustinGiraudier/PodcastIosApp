@@ -17,6 +17,7 @@
 		EC73BB0D2A12BC4600BF6255 /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73BB0C2A12BC4600BF6255 /* TopBar.swift */; };
 		EC73BB112A12C3AB00BF6255 /* OnePodcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73BB102A12C3AB00BF6255 /* OnePodcast.swift */; };
 		EC73BB132A12C73400BF6255 /* PodcastList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73BB122A12C73400BF6255 /* PodcastList.swift */; };
+		EC73BB162A12CE9C00BF6255 /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC73BB152A12CE9C00BF6255 /* Stub.swift */; };
 		EC77DF5A2A0BD9A6001ACFE0 /* IOS_PodcastApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC77DF592A0BD9A6001ACFE0 /* IOS_PodcastApp.swift */; };
 		EC77DF5E2A0BD9A7001ACFE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC77DF5D2A0BD9A7001ACFE0 /* Assets.xcassets */; };
 		EC77DF612A0BD9A7001ACFE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC77DF602A0BD9A7001ACFE0 /* Preview Assets.xcassets */; };
@@ -60,6 +61,7 @@
 		EC73BB0C2A12BC4600BF6255 /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
 		EC73BB102A12C3AB00BF6255 /* OnePodcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnePodcast.swift; sourceTree = "<group>"; };
 		EC73BB122A12C73400BF6255 /* PodcastList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastList.swift; sourceTree = "<group>"; };
+		EC73BB152A12CE9C00BF6255 /* Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
 		EC77DF562A0BD9A6001ACFE0 /* IOS-Podcast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-Podcast.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC77DF592A0BD9A6001ACFE0 /* IOS_PodcastApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_PodcastApp.swift; sourceTree = "<group>"; };
 		EC77DF5D2A0BD9A7001ACFE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,6 +124,14 @@
 			path = Bibliotheque;
 			sourceTree = "<group>";
 		};
+		EC73BB142A12CE9100BF6255 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				EC73BB152A12CE9C00BF6255 /* Stub.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
 		EC77DF4D2A0BD9A6001ACFE0 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +155,7 @@
 		EC77DF582A0BD9A6001ACFE0 /* IOS-Podcast */ = {
 			isa = PBXGroup;
 			children = (
+				EC73BB142A12CE9100BF6255 /* data */,
 				EC73BAFF2A12137600BF6255 /* model */,
 				EC77DF862A0BDD76001ACFE0 /* assets */,
 				EC77DF832A0BDB3F001ACFE0 /* views */,
@@ -359,6 +370,7 @@
 				EC73BB012A12138500BF6255 /* Episode.swift in Sources */,
 				EC77DF8E2A0BE5C2001ACFE0 /* Colors.swift in Sources */,
 				EC77DF5A2A0BD9A6001ACFE0 /* IOS_PodcastApp.swift in Sources */,
+				EC73BB162A12CE9C00BF6255 /* Stub.swift in Sources */,
 				EC73BAF82A120A1600BF6255 /* PodcastMark.swift in Sources */,
 				EC77DF902A116962001ACFE0 /* topBar.swift in Sources */,
 				EC73BB112A12C3AB00BF6255 /* OnePodcast.swift in Sources */,

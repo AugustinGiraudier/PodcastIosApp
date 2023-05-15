@@ -28,8 +28,13 @@ struct OnePodcast: View {
                     .cornerRadius(10)
                 Text(podcast.title)
                     .foregroundColor(.black)
+                    .lineLimit(1)
+                    .truncationMode(.tail)
                 Text("Mise à jour : " + updateDay)
                     .foregroundColor(.gray)
+                    .font(.system(size:14))
+                    .lineLimit(1)
+                    .truncationMode(.tail)
             }
         }
     }
@@ -37,8 +42,6 @@ struct OnePodcast: View {
 
 struct OnePodcast_Previews: PreviewProvider {
     static var previews: some View {
-        OnePodcast(podcast: Podcast(imageName: "podcast1", title: "le titre", mark: "4.5 (45)", category: "Humour · Tous les jours", author: "Fabien Olicard", episodes: [
-            Episode(day:"MARDI", summary:"| testekjfhzlefhze zelkfhzkehf zlekfhzehfzieh zliehfziehf zlefzkehfkzf", duration: "00:06:10", title: "Le journal de la science")
-    ]))
+        OnePodcast(podcast: Stub.getOnePodcast())
     }
 }

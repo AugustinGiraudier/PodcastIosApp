@@ -31,6 +31,8 @@ struct EpisodeRow: View {
                 .foregroundColor(.gray)
                 .bold()
                 .frame(maxWidth: .infinity, alignment: .leading)
+                .lineLimit(3)
+                .truncationMode(.tail)
             
             HStack{
                 Button(action: {
@@ -57,6 +59,6 @@ struct EpisodeRow: View {
 
 struct EpisodeRow_Previews: PreviewProvider {
     static var previews: some View {
-        EpisodeRow(episode:Episode(day:"MARDI", summary:"testekjfhzlefhze zelkfhzkehf zlekfhzehfzieh zliehfziehf zlefzkehfkzf", duration: "6 min", title: "| Ceci est un titre d'article"))
+        EpisodeRow(episode:Stub.getOnEpisode())
     }
 }

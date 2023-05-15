@@ -34,8 +34,6 @@ struct PodcastMark: View {
 
 struct PodcastMark_Previews: PreviewProvider {
     static var previews: some View {
-        PodcastMark(mainColor:.blue,podcast: Podcast(imageName: "podcast2", title: "le titre", mark: "4.5 (45)", category: "Humour · Tous les jours", author: "Fabien Olicard", episodes: [
-            Episode(day:"MARDI", summary:"| teste kjfhz lefhze zelkfh zkehf zlek fhzehf zieh zliehf ziehf zlefz kehf kzf", duration: "00:06:10", title: "Le journal de la science")
-    ]))
+        PodcastMark(mainColor:.blue,podcast: Stub.getOnePodcast())
     }
 }
