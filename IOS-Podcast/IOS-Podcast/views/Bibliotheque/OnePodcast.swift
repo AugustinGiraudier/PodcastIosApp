@@ -27,7 +27,7 @@ struct OnePodcast: View {
                     .frame(width: imgSize, height: imgSize)
                     .cornerRadius(10)
                 Text(podcast.title)
-                    .foregroundColor(.black)
+                    .foregroundColor(Colors.textPrimary)
                     .lineLimit(1)
                     .truncationMode(.tail)
                 Text("Mise à jour : " + updateDay)

@@ -24,7 +24,7 @@ struct PodcastView: View {
                 VStack{
                     backGroundColor.edgesIgnoringSafeArea(.top)
                         .frame(height: UIScreen.main.bounds.size.height/2)
-                    Color.white
+                    Colors.primary
                 }
                 VStack{
                     ScrollView(.vertical){

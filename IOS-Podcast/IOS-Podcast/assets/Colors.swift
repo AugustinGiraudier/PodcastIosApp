@@ -12,5 +12,6 @@ public enum Colors{
     
     static let primary = Color("Primary")
     static let secondary = Color("Secondary")
+    static let textPrimary = Color("TextPrimary")
     
 }

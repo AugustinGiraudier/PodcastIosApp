@@ -19,7 +19,7 @@ struct BibliothequeView: View {
         NavigationStack {
             ZStack{
                 
-                Color.white
+                Colors.primary
                 
                 VStack{
                     ScrollView(.vertical){
