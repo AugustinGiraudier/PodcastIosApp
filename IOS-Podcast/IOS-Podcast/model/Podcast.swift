@@ -15,6 +15,7 @@ public struct Podcast : Identifiable{
     public let title : String
     public let mark : String
     public let category : String
+    public let author : String
     
     public let episodes : [Episode]
     

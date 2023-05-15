@@ -11,6 +11,12 @@ struct PodcastView: View {
         
     @State public var backGroundColor: Color = .white
     
+    private let podcast:Podcast
+    
+    init(podcast:Podcast){
+        self.podcast = podcast
+    }
+    
     var body: some View {
         
         NavigationStack {
@@ -23,7 +29,7 @@ struct PodcastView: View {
                 VStack{
                     ScrollView(.vertical){
                         VStack{
-                            PodcastHeader(imageName: "podcast3", parent: self)
+                            PodcastHeader(podcast: podcast, parent: self)
                             PodcastEpisodes()
                         }
                     }
@@ -37,6 +43,8 @@ struct PodcastView: View {
 
 struct PodcastView_Previews: PreviewProvider {
     static var previews: some View {
-        PodcastView()
+        PodcastView(podcast: Podcast(imageName: "podcast2", title: "le titre", mark: "4.5 (45)", category: "Humour · Tous les jours", author: "Fabien Olicard", episodes: [
+            Episode(day:"MARDI", summary:"| testekjfhzlefhze zelkfhzkehf zlekfhzehfzieh zliehfziehf zlefzkehfkzf", duration: "00:06:10", title: "Le journal de la science")
+    ]))
     }
 }

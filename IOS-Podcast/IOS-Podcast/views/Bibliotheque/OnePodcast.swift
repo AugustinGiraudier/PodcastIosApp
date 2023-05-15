@@ -20,7 +20,7 @@ struct OnePodcast: View {
     }
     
     var body: some View {
-        NavigationLink(destination: PodcastView()) {
+        NavigationLink(destination: PodcastView(podcast:podcast)) {
             VStack (alignment: .leading){
                 Image(podcast.imageName)
                     .resizable()
@@ -37,7 +37,7 @@ struct OnePodcast: View {
 
 struct OnePodcast_Previews: PreviewProvider {
     static var previews: some View {
-        OnePodcast(podcast: Podcast(imageName: "podcast1", title: "le titre", mark: "4.5 (45)", category: "Humour · Tous les jours", episodes: [
+        OnePodcast(podcast: Podcast(imageName: "podcast1", title: "le titre", mark: "4.5 (45)", category: "Humour · Tous les jours", author: "Fabien Olicard", episodes: [
             Episode(day:"MARDI", summary:"| testekjfhzlefhze zelkfhzkehf zlekfhzehfzieh zliehfziehf zlefzkehfkzf", duration: "00:06:10", title: "Le journal de la science")
     ]))
     }

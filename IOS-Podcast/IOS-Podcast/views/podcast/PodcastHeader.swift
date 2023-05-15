@@ -9,14 +9,18 @@ import SwiftUI
 
 struct PodcastHeader: View {
     
-    public init(imageName:String, parent: PodcastView){
-        image = UIImage(named:imageName)
+    public init(podcast:Podcast, parent: PodcastView?=nil){
+        self.podcast = podcast
+        image = UIImage(named:podcast.imageName)
         self.parent = parent
+        self.lastEpisode = podcast.episodes[podcast.episodes.count-1]
     }
     
     @State private var backGroundColor: Color = .gray // Ajout d'un State pour stocker la couleur moyenne
+    private let podcast : Podcast
     private let image : UIImage?
-    private let parent : PodcastView
+    private let parent : PodcastView?
+    private let lastEpisode : Episode?
     
     var body: some View {
         
@@ -37,7 +41,7 @@ struct PodcastHeader: View {
                     .shadow(radius: 20)
                     .padding(.bottom, 10)
                 
-                Text("L'Hippocampe")
+                Text(podcast.title)
                     .bold()
                     .font(.system(size: 20))
                     .foregroundColor(.white)
@@ -62,12 +66,18 @@ struct PodcastHeader: View {
                 }
                 .shadow(radius: 20)
                 
-                Text("Aujourd'hui : Trésor ou escroquerie ? : durée : 01:15:10 - Comprendre leur fonctionnement...")
-                    .foregroundColor(.white)
-                    .bold()
-                    .padding(.top, 20)
+                HStack{
+                    Text(lastEpisode!.day + " : " + lastEpisode!.summary)
+                        .foregroundColor(.white)
+                        .bold()
+                        .padding(.top, 20)
+                        .padding(.horizontal)
+                        .multilineTextAlignment(.leading)
+                    Spacer()
+                }
+                    
                 
-                PodcastMark(mainColor:.white)
+                PodcastMark(mainColor:.white,podcast: podcast)
                     .padding(.top, 1)
                 
                 Spacer()
@@ -75,7 +85,7 @@ struct PodcastHeader: View {
                 .onAppear {
                     if let image = image {
                         backGroundColor = averageColor(from: image)
-                        parent.backGroundColor = backGroundColor
+                        parent?.backGroundColor = backGroundColor
                     }
                 }
                 .background(backGroundColor.edgesIgnoringSafeArea(.top))
@@ -132,6 +142,8 @@ struct PodcastHeader: View {
 
 struct PodcastHeader_Previews: PreviewProvider {
     static var previews: some View {
-        PodcastHeader(imageName: "podcast1", parent :PodcastView())
+        PodcastHeader(podcast: Podcast(imageName: "podcast2", title: "le titre", mark: "4.5 (45)", category: "Humour · Tous les jours", author: "Fabien Olicard", episodes: [
+            Episode(day:"MARDI", summary:"| teste kjfhz lefhze zelkfh zkehf zlek fhzehf zieh zliehf ziehf zlefz kehf kzf", duration: "00:06:10", title: "Le journal de la science")
+    ]))
     }
 }
