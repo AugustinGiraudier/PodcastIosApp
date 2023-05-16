@@ -20,9 +20,9 @@ struct TopBar2 : ToolbarContent{
             }) {
                 Image(systemName: "chevron.left") // Icône système
                     .frame(width: 15,height: 15)
-                    .foregroundColor(Colors.textPrimary) // Couleur de l'icône
+                    .foregroundColor(.white) // Couleur de l'icône
                     .padding(10) // Espacement interne du bouton
-                    .background(Colors.primary.opacity(0.5)) // Fond noir avec opacité de 50%
+                    .background(.black.opacity(0.5)) // Fond noir avec opacité de 50%
                     .clipShape(Circle()) // Forme ronde
             }
         }
@@ -33,9 +33,9 @@ struct TopBar2 : ToolbarContent{
             }) {
                 Image(systemName: "arrow.down") // Icône système
                     .frame(width: 15,height: 15)
-                    .foregroundColor(Colors.textPrimary) // Couleur de l'icône
+                    .foregroundColor(.white) // Couleur de l'icône
                     .padding(10) // Espacement interne du bouton
-                    .background(Colors.primary.opacity(0.5)) // Fond noir avec opacité de 50%
+                    .background(.black.opacity(0.5)) // Fond noir avec opacité de 50%
                     .clipShape(Circle()) // Forme ronde
             }
             Button(action: {
@@ -43,9 +43,9 @@ struct TopBar2 : ToolbarContent{
             }) {
                 Image(systemName: "ellipsis") // Icône système
                     .frame(width: 15,height: 15)
-                    .foregroundColor(Colors.textPrimary) // Couleur de l'icône
+                    .foregroundColor(.white) // Couleur de l'icône
                     .padding(10) // Espacement interne du bouton
-                    .background(Colors.primary.opacity(0.5)) // Fond noir avec opacité de 50%
+                    .background(.black.opacity(0.5)) // Fond noir avec opacité de 50%
                     .clipShape(Circle()) // Forme ronde
             }
         }

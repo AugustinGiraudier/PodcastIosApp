@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct TabBar: View {
+    
+    @State private var selection = 3
+    
     var body: some View {
-        TabView{
+        TabView(selection: $selection){
             
             BibliothequeView(podcasts: Stub.getAllPodcasts())
                 .tabItem({
@@ -20,6 +23,7 @@ struct TabBar: View {
                             .font(.caption)
                     }
                 })
+                .tag(1)
             BibliothequeView(podcasts: Stub.getAllPodcasts())
                 .tabItem({
                     VStack {
@@ -29,6 +33,7 @@ struct TabBar: View {
                             .font(.caption)
                     }
                 })
+                .tag(2)
             BibliothequeView(podcasts: Stub.getAllPodcasts())
                 .tabItem({
                     VStack {
@@ -36,7 +41,9 @@ struct TabBar: View {
                             .imageScale(.large)
                         Text("Bibliothèque")
                             .font(.caption)
-                    }                })
+                    }
+                })
+                .tag(3)
             BibliothequeView(podcasts: Stub.getAllPodcasts())
                 .tabItem({
                     VStack {
@@ -46,7 +53,7 @@ struct TabBar: View {
                             .font(.caption)
                     }
                 })
-            
+                .tag(4)
         }
     }
 }
