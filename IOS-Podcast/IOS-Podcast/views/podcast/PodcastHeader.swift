@@ -31,9 +31,6 @@ struct PodcastHeader: View {
             
             VStack {
                 
-                topBar()
-                    .padding(.bottom,10)
-                
                 Image(uiImage: image ?? UIImage())
                     .resizable()
                     .frame(width: 200, height: 200)

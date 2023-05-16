@@ -26,8 +26,7 @@ struct BibliothequeView: View {
                         PodcastList(podcasts: podcasts)
                     }
                     
-                    NavBar()
-                        .frame(height: 0)
+               
                 }
                 .navigationTitle("Podcasts")
                 .toolbar {TopBar()}

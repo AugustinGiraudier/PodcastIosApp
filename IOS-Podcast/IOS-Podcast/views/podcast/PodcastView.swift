@@ -18,25 +18,22 @@ struct PodcastView: View {
     }
     
     var body: some View {
-        
-        NavigationStack {
-            ZStack{
-                VStack{
-                    backGroundColor.edgesIgnoringSafeArea(.top)
-                        .frame(height: UIScreen.main.bounds.size.height/2)
-                    Colors.primary
-                }
-                VStack{
-                    ScrollView(.vertical){
-                        VStack{
-                            PodcastHeader(podcast: podcast, parent: self)
-                            PodcastEpisodes(episodes: podcast.episodes)
-                        }
+        ZStack{
+            VStack{
+                backGroundColor.edgesIgnoringSafeArea(.top)
+                    .frame(height: UIScreen.main.bounds.size.height/2)
+                Colors.primary
+            }
+            VStack{
+                ScrollView(.vertical){
+                    VStack{
+                        PodcastHeader(podcast: podcast, parent: self)
+                        PodcastEpisodes(episodes: podcast.episodes)
                     }
-                    NavBar()
-                        .frame(height: 0)
                 }
             }
+            .toolbar {TopBar2()}
+            .navigationBarBackButtonHidden(true)
         }
     }
 }

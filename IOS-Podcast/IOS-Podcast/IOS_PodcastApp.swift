@@ -11,7 +11,7 @@ import SwiftUI
 struct IOS_PodcastApp: App {
     var body: some Scene {
         WindowGroup {
-            BibliothequeView(podcasts: Stub.getAllPodcasts())
+            TabBar()
         }
     }
 }

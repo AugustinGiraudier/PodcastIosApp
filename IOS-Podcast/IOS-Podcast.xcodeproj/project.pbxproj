@@ -30,7 +30,8 @@
 		EC77DF902A116962001ACFE0 /* topBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC77DF8F2A116962001ACFE0 /* topBar.swift */; };
 		EC77DF932A116FEF001ACFE0 /* PodcastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC77DF922A116FEF001ACFE0 /* PodcastView.swift */; };
 		EC77DF952A1170A1001ACFE0 /* PodcastHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC77DF942A1170A1001ACFE0 /* PodcastHeader.swift */; };
-		EC77DF972A11730D001ACFE0 /* NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC77DF962A11730D001ACFE0 /* NavBar.swift */; };
+		ECACC89F2A13CA960007439C /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECACC89E2A13CA960007439C /* TabBar.swift */; };
+		ECACC8A12A13CF490007439C /* TopBar2.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECACC8A02A13CF490007439C /* TopBar2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,7 +78,8 @@
 		EC77DF8F2A116962001ACFE0 /* topBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topBar.swift; sourceTree = "<group>"; };
 		EC77DF922A116FEF001ACFE0 /* PodcastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastView.swift; sourceTree = "<group>"; };
 		EC77DF942A1170A1001ACFE0 /* PodcastHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastHeader.swift; sourceTree = "<group>"; };
-		EC77DF962A11730D001ACFE0 /* NavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBar.swift; sourceTree = "<group>"; };
+		ECACC89E2A13CA960007439C /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		ECACC8A02A13CF490007439C /* TopBar2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,8 +196,9 @@
 			isa = PBXGroup;
 			children = (
 				EC73BB0C2A12BC4600BF6255 /* TopBar.swift */,
+				ECACC8A02A13CF490007439C /* TopBar2.swift */,
 				EC73BAFB2A12110700BF6255 /* ListSeparator.swift */,
-				EC77DF962A11730D001ACFE0 /* NavBar.swift */,
+				ECACC89E2A13CA960007439C /* TabBar.swift */,
 				EC73BB072A12380C00BF6255 /* Bibliotheque */,
 				EC77DF912A116F5A001ACFE0 /* podcast */,
 			);
@@ -367,6 +370,8 @@
 				EC73BB132A12C73400BF6255 /* PodcastList.swift in Sources */,
 				EC73BAFC2A12110700BF6255 /* ListSeparator.swift in Sources */,
 				EC73BB0D2A12BC4600BF6255 /* TopBar.swift in Sources */,
+				ECACC89F2A13CA960007439C /* TabBar.swift in Sources */,
+				ECACC8A12A13CF490007439C /* TopBar2.swift in Sources */,
 				EC73BB012A12138500BF6255 /* Episode.swift in Sources */,
 				EC77DF8E2A0BE5C2001ACFE0 /* Colors.swift in Sources */,
 				EC77DF5A2A0BD9A6001ACFE0 /* IOS_PodcastApp.swift in Sources */,
@@ -374,7 +379,6 @@
 				EC73BAF82A120A1600BF6255 /* PodcastMark.swift in Sources */,
 				EC77DF902A116962001ACFE0 /* topBar.swift in Sources */,
 				EC73BB112A12C3AB00BF6255 /* OnePodcast.swift in Sources */,
-				EC77DF972A11730D001ACFE0 /* NavBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
